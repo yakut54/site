@@ -1,0 +1,31 @@
+.red-line{
+  width: 100%;
+  background-color: #d42939;
+}
+.inner-red-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-nav{
+  width: fit-content;
+  display: flex;
+}
+.red-line-btn{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.red-line-btn:hover{
+  background-color: #d6c9a2;
+  color: #192024;
+}
+
+
+@media (max-width: 1025px) {
+  .red-line{display: none;}
+}

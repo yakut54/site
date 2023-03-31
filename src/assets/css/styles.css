@@ -1,0 +1,169 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+:root{
+  --nav-link-color: #0a0917;
+  --main-color: #d52939;
+}
+html, body{
+  min-height: 100vh;
+  height: auto;}
+body{
+  display: flex;
+  font-size: 20px;
+}
+#app{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.content{
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  padding: 20px 10px 20px 0;
+}
+.page{
+  width: 100%;
+  margin-top: 80px;
+}
+.home-banner-link{
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.lifehacks-banner{
+  max-width: 100%;
+}
+.razum-h5-background{
+  padding: 4% 2%;
+  padding-left: 14%;
+  background-image: url(../images/razum-new.png);
+  background-position: 2% 50%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #d6c9a2;
+  font-size: 24px;
+}
+.home-item{
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+}
+.inner-home-item{
+  min-height: 300px;
+  border: 1px solid #d6c9a2;
+  margin-bottom: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  flex: 1;
+}
+.text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.home-item .item-img {
+  width: 100px;
+  max-width: 100px;
+  margin-right: 2%;
+  margin-left: 2%;
+  float: left;
+}
+.home-item .item-img img{
+  width: 100%;
+}
+.item-block.row{
+  margin-bottom: 5px;
+}
+.wrap-item-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrap-item-btn .item-btn {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  width: 50%;
+  order: 3;
+  height: 38px;
+  font-size: 18px;
+  align-items: center;
+  color: var(--main-color);
+  position: relative;
+  left: 10px;
+}
+.wrap-item-btn .item-btn:hover {
+  background-color: #d6c9a2;
+}
+.home-item p{line-height: 1.4em;}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1025px) {
+  .home-item .item-img {width: 85px;}
+  .razum-h5-background {background-size: 31px;}
+  .home-item p br:not(.br){display: none;}
+}
+@media (max-width: 900px) {
+  .page {margin-top: 60px;}
+  .content {padding: 10px 7px 0px 0;}
+  .razum-h5-background {
+    padding: 3% 2%;
+    padding-left: 11%;}
+}
+@media (max-width: 700px) {
+  .razum-h5-background {background-size: 28px;}
+  .home-item .item-img {width: 62px;}
+}
+@media (max-width: 600px) {
+  .page {margin-top: 50px;}
+}
+@media (max-width: 500px) {
+  .home-item .item-img {width: 59px;}
+  .content {order: -1;padding: 10px;}
+  .razum-h5-background {
+    padding: 2% 2%;
+    padding-left: 10%;}
+  .razum-h5-background {background-size: 23px;font-size: 20px;}
+  .inner-home-item {
+    min-width: 100%;
+    padding: 5px;
+    min-height: fit-content;}
+  .wrap-item-btn .item-btn {
+    height: 36px;
+    font-size: 17px;}
+  .home-item{min-width: 100%;}
+}
+@media (max-width: 320px) {
+  .page {margin-top: 40px;}
+  .home-item p{font-size: 15px;}
+  .razum-h5-background {padding-left: 12%;}
+  .razum-h5-background {
+    background-size: 19px;
+    font-size: 17px;}
+}
+
+
+
+
+
+
+

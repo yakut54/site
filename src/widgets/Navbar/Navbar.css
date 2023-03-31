@@ -1,0 +1,370 @@
+.descktop-navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 2000;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f4eee1;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#fff4dd),to(#fff4dd));
+  background-image: linear-gradient(180deg,#fff4dd,#fff4dd);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);
+  height: 80px;
+}
+.inner-descktop-navbar{
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.logotip{
+  flex: 1;
+  max-width: 80px;
+  margin-left: 20px;
+}
+.logotip img{
+  width: 100%;
+}
+.navbar{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+.left-navbar{
+  display: flex;
+  margin-left: 15px;
+}
+.left-navbar-link{
+  display: flex;
+  padding: 23px 22px 29px 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.left-navbar-link img{
+  width: 20px;
+}
+.left-navbar-link span, .inner-span-katalog{
+  color: var(--nav-link-color);
+  font-size: 1rem;
+}
+.left-navbar-link span.span-katalog{margin-left: 5px;}
+.left-navbar-link:hover .span-katalog,
+.katalog-button:hover .inner-span-katalog{
+  text-decoration: underline;
+}
+.navbar-katalog-btn{
+  position: static;
+}
+.navbar-katalog-coner{
+  position: relative;
+  top: 3px;
+  left: 0px;
+}
+.navbar-katalog-content{
+  background: #fff;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+}
+.navbar-katalog-btn:hover .navbar-katalog-content{
+  display: block;
+}
+.inner-navbar-katalog-content{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 2rem 2rem 2rem 0;
+  flex-wrap: wrap;
+}
+.katalog-content-col{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+}
+.katalog-button{
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: .5rem;
+  padding: .5rem .75rem;
+  grid-column-gap: 1rem;
+  flex-wrap: nowrap;
+  display: flex;
+}
+.katalog-button:hover{
+  background-color: #faf0e0;
+}
+.inner-katalog-button{
+  align-items: center;
+  flex-wrap: nowrap;
+}
+img.img-katalog-button{
+  width: 25px;
+  height: 25px;
+}
+.new-span{
+  background-color: #ecfdf3;
+  color: #027a48;
+  font-size: 18px;
+  padding: .125rem .5rem;
+  margin-left: 5px;
+}
+.hit-span{
+  background-color: #fdedec;
+  color: #d52939;
+  font-size: 18px;
+  padding: .125rem .5rem;
+  margin-left: 5px;
+}
+
+/* ========================================== */
+
+.right-navbar{
+  display: flex;
+  width: 400px;
+  align-items: center;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.75rem;
+}
+.search-left{
+  flex: 1;
+  position: relative;
+}
+.search-right{
+  flex: 1;
+}
+.search-input{
+  border-radius: 2rem;
+  background-color: #fffcf6;
+  box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.23);
+  border: 1px solid transparent;
+  height: 40px;
+  width: 100%;
+  max-width: 220px;
+  padding-left: 10px;
+  transition: .2s;
+  opacity: 0;
+}
+.search-left:hover .search-input{
+  opacity: 1;
+}
+.search-input:focus{
+  outline: none;
+  opacity: 1;
+  box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,.23);
+}
+.lk-btn{
+  display: flex;
+  padding: .5rem .8rem .5rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  background-color: transparent;
+  background-image: url(../../assets/images/telo2.png);
+  background-position: 8% 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 2px 0 rgba(16,24,40,.05);
+  transition: .3s;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.5;
+  background-color: #d52939;
+}
+.lk-btn:hover{
+  border: 1px solid #181818;
+  background-image: url(../../assets/images/telo.png);
+  background-color: transparent;
+  box-shadow: 0px 0px 4px 3px rgb(3 3 108 / 8%);
+  transition: .3s;
+  color: #000;
+}
+.loupe{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  border: 1px #eff0f6;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 3px rgb(3 3 108 / 8%);
+  cursor: pointer;
+  background-image: url(../../assets/images/loupe.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: .2s;
+}
+.loupe:hover{
+  transform: scale(.98);
+}
+
+
+/* ========  mobile-navbar  ============ */
+
+
+.mobile-navbar{
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  background: transparent;
+  transition: .3s;
+  top: -100%;
+}
+.mobile-navbar.active{
+  top: 70px;
+}
+.mobile-navbar.active .navbar-katalog-content{
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .right-navbar {width: 350px;}
+}
+@media (max-width: 1000px) {
+  .navbar-katalog-content{position: static;}
+  .right-navbar {width: 340px;}
+  .navbar-katalog-content{top: 70px;}
+  span.span-katalog{display: none;}
+  .navbar-katalog-coner {left: 5px;}
+  .descktop-navbar {height: 70px;}
+  .logotip {max-width: 70px;width: 70px;height: 70px;}
+  img.img-katalog-button {
+    width: 20px;
+    height: 20px;}
+  .katalog-button {grid-column-gap: .5rem;}
+  .inner-navbar-katalog-content {padding: 10px 0rem 10px 0rem;}
+  .left-navbar-link {padding: 23px 22px 24px 5px;}
+}
+@media (max-width: 900px) {
+  .katalog-content-col{min-width: 50%;}
+  .logotip {
+    max-width: 60px;
+    width: 60px;
+    height: 60px;}
+  .descktop-navbar {height: 60px;}
+  .left-navbar-link {padding: 15px 22px 14px 5px;}
+  .mobile-navbar.active {top: 60px;z-index: 2;}
+  .navbar-katalog-content{border-bottom: 1px solid #000;}
+}
+@media (max-width: 700px) {
+  .loupe {
+    width: 30px;
+    height: 30px;
+    background-size: 15px;}
+  .lk-btn {
+    padding: 6px 8px 6px 30px;
+    background-size: 18px;}
+  .search-input {height: 30px;}
+  .right-navbar {width: 310px;}
+  .left-navbar-link {padding: 15px 15px 14px 5px;}
+}
+
+@media (max-width: 600px) {
+  .search-right{flex: .2;}
+  .lk-btn{
+    height: 30px;
+    width: 30px;
+    background-position: 50% 50%;
+    padding: 5px;
+    border-radius: 5px;}
+  .right-navbar {width: 230px;grid-column-gap: 0.4rem;}
+  .descktop-navbar {height: 50px;}
+  .logotip {
+    max-width: 50px;
+    width: 50px;
+    height: 50px;}
+  .mobile-navbar.active {top: 50px;}
+  .left-navbar-link {padding: 9px 10px 9px 3px;}
+  .left-navbar-link img {width: 17px;}
+}
+
+@media (max-width: 500px) {
+  .home-banner-link{min-width: 100%;}
+  .right-navbar {width: 180px;}
+  .katalog-content-col{
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 5px;
+    min-width: 100%;}
+  .left-navbar {margin-left: 6px;}
+  .right-navbar{padding-right: 5px;}
+  .navbar-katalog-content {
+    padding-left: 10px;
+    padding-right: 10px;}
+  .navbar {margin-left: 0px;}
+  .logotip {margin-left: 0px;}
+  .left-navbar-link span, .inner-span-katalog {
+    line-height: 1em;
+    font-size: 12px;}
+  .inner-katalog-button{
+    font-size: 12px;
+    text-align: center;
+    position: relative;}
+  .new-span, .hit-span {
+    top: -18px;right: -2px;margin-left: 0;
+    padding: .1rem .2rem;border-radius: 3px;
+    font-size: 12px;position: absolute;}
+  .new-span{border: 1px solid #c6e5c5}
+  .hit-span{border: 1px solid #d56b6b}
+  .inner-navbar-katalog-content {padding: 7px 0rem 10px 0rem;}
+  img.img-katalog-button {
+    width: 22px;
+    height: 22px;}
+  .katalog-button {
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #e6c7a8;
+    background: #ffefdf;
+    padding: 4px 6px;}
+}
+@media (max-width: 360px) {
+  .right-navbar {width: 158px;}
+}
+@media (max-width: 320px) {
+  img.img-katalog-button {
+    width: 20px;
+    height: 20px;}
+  .descktop-navbar {height: 40px;}
+  .mobile-navbar.active {top: 40px;}
+  .left-navbar-link {padding: 6px 6px 5px 3px;}
+  .logotip {
+    max-width: 40px;
+    width: 40px;
+    height: 40px;}
+  .loupe {
+    width: 26px;
+    height: 26px;
+    background-size: 13px;}
+  .search-input {height: 26px;}
+  .lk-btn {
+    height: 28px;
+    width: 28px;}
+  .right-navbar {width: 145px;}
+  .katalog-button {padding: 2px 6px;}
+}
+
+
+
+

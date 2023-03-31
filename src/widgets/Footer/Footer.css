@@ -1,0 +1,125 @@
+footer{
+  margin-top: 3%;
+  position: relative;
+  padding: 50px 30px 15px;
+  border-bottom: 1px solid #e4ebf3;
+  background-color: #f0eade;
+}
+.inner-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.left-footer{
+  flex: 1;
+  max-width: 220px;
+  width: 100%;
+}
+.right-footer{
+  flex: 1;
+  max-width: 533px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-footer-a{
+  max-width: 100%;
+}
+.left-footer-a img{
+  max-width: 100%;
+}
+.right-footer-block{
+  display: flex;
+  flex-direction: column;
+}
+.footer-link-2{
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #1a1b1f;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.footer-link-2._444{
+  color: #d52939;
+  text-transform: uppercase;
+}
+.footer-link-2:hover{
+  text-decoration: underline;
+}
+.title-small {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.right-footer-block-a{
+  flex: 1;
+  margin-top: 12px;
+}
+.right-footer-block-a a{
+  width: 35px;
+  height: 35px;
+  border: 1px #fefcf6;
+  border-radius: 0;
+  display: inline-block;
+}
+.right-footer-block-a a img{
+  border-radius: 5px;
+  max-width: 100%;
+}
+.footer-copyright-center {
+  color: #7a7777;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+
+
+@media (max-width: 900px) {
+  .left-footer {max-width: 181px;}
+  .right-footer {max-width: 468px;}
+}
+@media (max-width: 700px) {
+  .left-footer {max-width: 181px;}
+  .right-footer {max-width: 468px;}
+  footer {
+    margin-top: 2%;
+    padding: 20px 15px 15px;}
+  .footer-link-2 {margin-top: 7px;}
+}
+@media (max-width: 600px) {
+  .left-footer {max-width: 136px;}
+  .right-footer {max-width: 420px;}
+  .footer-link-2 {margin-top: 3px;}
+  .footer-copyright-center {font-size: 13px;}
+}
+@media (max-width: 500px) {
+  .inner-footer{
+    flex-direction: column;
+    align-items: center;}
+  .left-footer {
+    margin-bottom: 20px;
+    max-width: 50%;}
+  .right-footer{flex-direction: column;}
+  .right-footer-block{display: flex;justify-content: center;margin-bottom: 15px;}
+  .title-small{text-align: center;font-size: 19px;}
+  .footer-link-2._444{font-size: 19px;}
+  .footer-link-2{text-align: center;font-size: 16px;}
+  .footer-copyright-center {margin-top: 16px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
