@@ -1,10 +1,14 @@
 import { createStore } from 'vuex'
+import menu from './Menu/menu'
 
 export const store = createStore({
   state: () => ({
-    isDropMenu: false
+    
   }),
   mutations: {
-    toggleIsDropMenu: (state, bool) => state.isDropMenu = bool
+    
+  },
+  modules: {
+    menu
   }
 })

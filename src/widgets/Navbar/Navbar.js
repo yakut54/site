@@ -148,7 +148,6 @@ export const navbar = [
   }
 ]
 
-const isDescktop = () => document.documentElement.clientWidth > 1000
 
 export const delimetr = (array) => {
   const size = 6

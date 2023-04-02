@@ -1,5 +1,5 @@
 <template>
-  <div class="overlay" v-if="isDrop" @click="toggleIsDrop(!isDrop)"></div>
+  <div class="overlay" v-if="isOverlay" @click="toggleIsOverlay(!isOverlay)"></div>
 </template>
 
 <script>
@@ -10,10 +10,11 @@ export default {
   name: 'Navbar',
   setup(){
     const store = useStore()
-    const isDrop = computed(() => store.state.isDropMenu)
-    const toggleIsDrop = bool => store.commit('toggleIsDropMenu', bool)
+    const isOverlay = computed(() => store.state.menu.isOverlay)
+    const toggleIsOverlay = bool => store.commit('toggleIsOverlay', bool)
 
-    return { isDrop, toggleIsDrop }
+
+    return { isOverlay, toggleIsOverlay }
   },
 }
 </script>

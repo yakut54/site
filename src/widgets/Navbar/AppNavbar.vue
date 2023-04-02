@@ -1,6 +1,6 @@
 <template>
 
-  <div class="mobile-navbar show_1000" :class="{'active': isDrop}">
+  <div class="mobile-navbar show_1025" :class="{'active': isDrop}">
     <NavbarContent />
   </div>
 
@@ -24,7 +24,7 @@
             <span class="span-katalog">Бесплатно</span>
           </a>
           <DescktopNavbar />
-          <div class="left-navbar-link navbar-katalog-btn show_1000_f" @click="toggleIsDrop(!isDrop)">
+          <div class="left-navbar-link navbar-katalog-btn show_1025_f" @click="toggleIsDrop(!isDrop)">
             <img src="@/assets/images/katalog.png" alt="" />
             <span class="span-katalog">Каталог</span>
             <span class="navbar-katalog-coner">
@@ -59,7 +59,7 @@ export default {
   name: 'Navbar',
   setup(){
     const store = useStore()
-    const isDrop = computed(() => store.state.isDropMenu)
+    const isDrop = computed(() => store.state.menu.isDropMenu)
     const toggleIsDrop = bool => store.commit('toggleIsDropMenu', bool)
 
     return { isDrop, toggleIsDrop }

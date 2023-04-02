@@ -1,5 +1,5 @@
 <template>
-  <div class="left-navbar-link navbar-katalog-btn hide_1000">
+  <div class="left-navbar-link navbar-katalog-btn hide_1025">
     <img src="@/assets/images/katalog.png" alt="" />
     <span class="span-katalog">Каталог</span>
     <span class="navbar-katalog-coner">
@@ -20,5 +20,3 @@ export default {
   components: { NavbarContent }
 }
 </script>
-
-<style></style>

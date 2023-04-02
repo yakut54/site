@@ -15,161 +15,19 @@
         </div>
 
         <div class="row">
-          <div class="home-item">
+
+          <div class="home-item" v-for="item in page" :key="item.title">
             <div class="text">
-              <h5 class="ael razum-h5-background">Нейрокорректоры</h5>
+              <h5 class="ael razum-h5-background" v-html="item.title"></h5>
 
               <div class="inner-home-item">
                 <div>
                   <div class="item-img">
-                    <img :src="`${path}/img/cm25.png`" alt="" title="">
+                    <img :src="`${path}/img/${item.img}`" alt="" title="">
                   </div>
-                  <p>
-                    Нейрокорректоры – это колоссальное научное открытие. Они напрямую работают с полем мышления,
-                    освобождая
-                    его
-                    от того, что портит судьбу, гробит здоровье, разрушает отношения и <br>
-                    сводит на ноль уверенность в себе. <br>
-                    Нейрокорректоры строятся по конкретным целям, ориентированным на желания человека, и выполняют 2
-                    функции: <br>
-                    &nbsp;&nbsp;&nbsp;1. Очищают поле мышления от сдерживающих/разрушительных представлений <br>
-                    &nbsp;&nbsp;&nbsp;2. На их место загружают представления позитивные <br>
-                    Результат виден/чувствуется после каждого обращения к нейрокорректору. Курс применения нейрокорректора
-                    обеспечивает накопление эффекта и укрепляет его устойчивость. Поэтому, начиная примерно с середины
-                    курса,
-                    люди рапортуют о достижениях – наглядных и неоспоримых. <br>
-                  </p>
+                  <p v-html="item.text"></p>
                 </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="home-item">
-            <div class="text">
-              <h5 class="ael razum-h5-background">МетаХилинг</h5>
-
-              <div class="inner-home-item">
-                <div>
-                  <div class="item-img">
-                    <img :src="`${path}/img/cm27.png`" alt="" title="">
-                  </div>
-                  <p>Метод МетаХилинг – это эффективные программы, обеспечивающие полное и окончательное выздоровление при
-                    помощи собственного разума. Однако не сам по себе разум спасает от болезни, а усиление сил организма,
-                    заявленное разумом. <br>
-                    Когда человек, доверяя силам своего разума и организма, изо всех сил стремится выздороветь полностью и
-                    окончательно, он обязательно будет вознагражден.<br>
-                  </p>
-                </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="row">
-          <div class="home-item">
-            <div class="text">
-              <h5 class="ael razum-h5-background">Нейрокорректоры</h5>
-
-              <div class="inner-home-item">
-                <div>
-                  <div class="item-img">
-                    <img :src="`${path}/img/cm25.png`" alt="" title="">
-                  </div>
-                  <p>
-                    Нейрокорректоры – это колоссальное научное открытие. Они напрямую работают с полем мышления,
-                    освобождая
-                    его
-                    от того, что портит судьбу, гробит здоровье, разрушает отношения и <br>
-                    сводит на ноль уверенность в себе. <br>
-                    Нейрокорректоры строятся по конкретным целям, ориентированным на желания человека, и выполняют 2
-                    функции: <br>
-                    &nbsp;&nbsp;&nbsp;1. Очищают поле мышления от сдерживающих/разрушительных представлений <br>
-                    &nbsp;&nbsp;&nbsp;2. На их место загружают представления позитивные <br>
-                    Результат виден/чувствуется после каждого обращения к нейрокорректору. Курс применения нейрокорректора
-                    обеспечивает накопление эффекта и укрепляет его устойчивость. Поэтому, начиная примерно с середины
-                    курса,
-                    люди рапортуют о достижениях – наглядных и неоспоримых. <br>
-                  </p>
-                </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="home-item">
-            <div class="text">
-              <h5 class="ael razum-h5-background">МетаХилинг</h5>
-
-              <div class="inner-home-item">
-                <div>
-                  <div class="item-img">
-                    <img :src="`${path}/img/cm27.png`" alt="" title="">
-                  </div>
-                  <p>Метод МетаХилинг – это эффективные программы, обеспечивающие полное и окончательное выздоровление при
-                    помощи собственного разума. Однако не сам по себе разум спасает от болезни, а усиление сил организма,
-                    заявленное разумом. <br>
-                    Когда человек, доверяя силам своего разума и организма, изо всех сил стремится выздороветь полностью и
-                    окончательно, он обязательно будет вознагражден.<br>
-                  </p>
-                </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="row">
-          <div class="home-item">
-            <div class="text">
-              <h5 class="ael razum-h5-background">Нейрокорректоры</h5>
-
-              <div class="inner-home-item">
-                <div>
-                  <div class="item-img">
-                    <img :src="`${path}/img/cm25.png`" alt="" title="">
-                  </div>
-                  <p>
-                    Нейрокорректоры – это колоссальное научное открытие. Они напрямую работают с полем мышления,
-                    освобождая
-                    его
-                    от того, что портит судьбу, гробит здоровье, разрушает отношения и <br>
-                    сводит на ноль уверенность в себе. <br>
-                    Нейрокорректоры строятся по конкретным целям, ориентированным на желания человека, и выполняют 2
-                    функции: <br>
-                    &nbsp;&nbsp;&nbsp;1. Очищают поле мышления от сдерживающих/разрушительных представлений <br>
-                    &nbsp;&nbsp;&nbsp;2. На их место загружают представления позитивные <br>
-                    Результат виден/чувствуется после каждого обращения к нейрокорректору. Курс применения нейрокорректора
-                    обеспечивает накопление эффекта и укрепляет его устойчивость. Поэтому, начиная примерно с середины
-                    курса,
-                    люди рапортуют о достижениях – наглядных и неоспоримых. <br>
-                  </p>
-                </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="home-item">
-            <div class="text">
-              <h5 class="ael razum-h5-background">МетаХилинг</h5>
-
-              <div class="inner-home-item">
-                <div>
-                  <div class="item-img">
-                    <img :src="`${path}/img/cm27.png`" alt="" title="">
-                  </div>
-                  <p>Метод МетаХилинг – это эффективные программы, обеспечивающие полное и окончательное выздоровление при
-                    помощи собственного разума. Однако не сам по себе разум спасает от болезни, а усиление сил организма,
-                    заявленное разумом. <br>
-                    Когда человек, доверяя силам своего разума и организма, изо всех сил стремится выздороветь полностью и
-                    окончательно, он обязательно будет вознагражден.<br>
-                  </p>
-                </div>
-                <div class="wrap-item-btn"><a href="#" class="item-btn">Подробнее →</a></div>
+                <div class="wrap-item-btn"><a :href="item.link" class="item-btn">Подробнее →</a></div>
               </div>
             </div>
           </div>
@@ -190,6 +48,7 @@
 <script>
 import { ref } from 'vue'
 import { pathname } from '@/path'
+import { MainPage } from './MainPage'
 import AppHeader from '@/widgets/Header/AppHeader'
 import AppSidebar from '@/widgets/Sidebar/AppSidebar'
 import AppFooter from '@/widgets/Footer/AppFooter'
@@ -200,8 +59,9 @@ export default {
   name: "Home",
   setup() {
     const path = ref(pathname)
+    const page = ref(MainPage)
 
-    return { path }
+    return { path, page }
   },
   components: { AppHeader, AppSidebar, AppFooter, MobileBottomMenu, Overlay }
 }

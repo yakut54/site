@@ -1,6 +1,6 @@
 <template>
   <div class="page about-page">
-    About
+    gifts
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import { useStore } from "vuex";
 
 export default {
-  name: "About",
+  name: "Gifts",
   setup() {
     const store = useStore()
 

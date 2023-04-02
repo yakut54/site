@@ -28,6 +28,12 @@ module.exports = defineConfig({
       title: 'Home',
       chunks: ['chunk-vendors', 'chunk-common', 'index']
     },
+    'gifts': {
+      entry: './src/pages/Gifts/index.js',
+      template: 'public/index.html',
+      title: 'Gifts',
+      chunks: ['chunk-vendors', 'chunk-common', 'gifts']
+    },
     'about': {
       entry: './src/pages/About/index.js',
       template: 'public/index.html',
