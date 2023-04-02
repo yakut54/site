@@ -1,6 +1,6 @@
 .red-line{
   width: 100%;
-  background-color: #d42939;
+  background-color: var(--main-color);
 }
 .inner-red-line{
   display: flex;
@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 .red-line-btn:hover{
-  background-color: #d6c9a2;
+  background-color: var(--color-beige);
   color: #192024;
 }
 

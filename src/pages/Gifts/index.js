@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import About from './Gifts.vue'
+import Gifts from './Gifts.vue'
 import { store } from '../../store'
 
-createApp(About)
+createApp(Gifts)
   .use(store)
   .mount('#app')

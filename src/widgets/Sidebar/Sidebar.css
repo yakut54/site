@@ -1,6 +1,6 @@
 aside{
   flex: 1;
-  padding: 20px 10px;
+  padding: 0px 10px 0px;
   width: 100%;
   max-width: 310px;
   display: flex;
@@ -67,12 +67,15 @@ aside{
   .sidebar-title {font-size: 24px;}
   .sidebar-content {padding: 12px 7px;}
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   aside {
     min-width: 100%;
     max-width: 100%;
-    padding: 10px 15px 10px 15px;}
+    padding: 0px 25px 10px 25px;}
   .inner-aside{width: 100%;}
+  .slider-a, .sidebar-slider, .slider-a-img {height: 546px;}
+}
+@media (max-width: 450px) {
   .slider-a, .sidebar-slider, .slider-a-img {height: 445px;}
   .home-item p{font-size: 16px;}
 }

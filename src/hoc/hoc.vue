@@ -1,19 +1,16 @@
 <template>
-  <div class="page">
-    <AppHeader />
+  <AppHeader />
 
-    <div class="max1200 row">
-      <AppSidebar />
-      <div class="content">
-
-      </div>
+  <div class="max1200 row wrapper">
+    <AppSidebar />
+    <div class="content">
+      <slot></slot>
     </div>
-
-    <AppFooter />
-    <MobileBottomMenu />
-    <Overlay />
-
   </div>
+
+  <AppFooter />
+  <MobileBottomMenu />
+  <Overlay />
 </template>
 
 <script>
@@ -27,11 +24,11 @@ export default {
   name: "Page",
 
   components: {
-    AppHeader, 
-    AppSidebar, 
-    AppFooter, 
-    MobileBottomMenu, 
-    Overlay 
+    AppHeader,
+    AppSidebar,
+    AppFooter,
+    MobileBottomMenu,
+    Overlay
   }
 }
 </script>

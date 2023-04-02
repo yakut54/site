@@ -23,6 +23,7 @@
   max-height: var(--height);
   min-height: var(--height);
 }
+.bottom-btn a{color:#fff;}
 .bottom-btn.active-btn, .bottom-btn:hover{
    background: var(--hover-btn);
    color: black;
