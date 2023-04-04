@@ -36,6 +36,8 @@ export default {
   line-height: 1.4em;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
 
   grid-column: 1/3; 
   grid-row: 1/1;
@@ -45,9 +47,20 @@ export default {
   height: 42px;
   cursor: pointer;
   display: block;
+  animation: inleft 2s ease-in-out;
 
   grid-column: 1/1; 
   grid-row: 1/1;
+}
+@keyframes inleft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .back-button img{
   width: 100%;

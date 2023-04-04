@@ -9,7 +9,7 @@
           <div class="right-footer-block">
             <div class="title-small"><strong>Компания</strong></div>
             <a href="#" class="footer-link-2 _444">Наше приложение</a>
-            <a href="#" class="footer-link-2">Каталог</a>
+            <a href="catalog.html" class="footer-link-2">Каталог</a>
             <a href="#" class="footer-link-2">Об авторе</a>
             <a href="#" class="footer-link-2">О проекте</a>
             <a href="#" class="footer-link-2">Отзывы</a>

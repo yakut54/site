@@ -11,7 +11,7 @@
       </div>
       <div class="navbar">
         <div class="left-navbar">
-          <a href="#" class="left-navbar-link">
+          <a href="index.html" class="left-navbar-link">
             <img src="@/assets/images/home.png" alt="" />
             <span class="span-katalog">Главная</span>
           </a>
