@@ -21,7 +21,7 @@
           </div>
         </div>
 
-        <div class="phone-btn">ПОДРОБНЕЕ</div>
+        <a href="account.html" class="phone-btn">Получить код</a>
 
         <div class="paragraph center cu">
           <span @click="toggleAuth" :class="!isAuth ? '' : 'aeb selection'">

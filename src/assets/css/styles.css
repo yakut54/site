@@ -11,7 +11,7 @@ html, body{
   height: auto;}
 body{
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
 }
 #app{
   width: 100%;
@@ -111,7 +111,7 @@ body{
   background-color: var(--color-beige);
 }
 .paragraph{
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4em;
 }
 .paragraph-time{
@@ -139,7 +139,7 @@ body{
   background-image: url(../../assets/images/gray-arrow.png);
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-size: 16px;
+  background-size: 16px 11px;
   position: relative;
   top: 5px;
   left: -9px;
@@ -175,6 +175,19 @@ body{
   transform: scale(.95);
 }
 .cu{cursor: pointer;}
+.input{
+  border: 1px solid #d6c9a2;
+  min-height: 45px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #252423;
+  font-size: 18px;
+  padding-left: 15px;
+}
+.input:focus{
+  outline: 1px solid blue;
+}
 
 
 @media (max-width: 1025px) {
@@ -188,10 +201,14 @@ body{
   .razum-h5-background {
     padding: 3% 2%;
     padding-left: 11%;}
+  .input {
+    font-size: 17px;
+    padding-left: 8px;}
 }
 @media (max-width: 700px) {
   .razum-h5-background {background-size: 28px;}
   .home-item .item-img {width: 62px;}
+  .input {min-height: 40px;margin-bottom: 10px;}
 }
 @media (max-width: 600px) {
   .page {margin-top: 50px;}
@@ -232,6 +249,9 @@ body{
     font-size: 17px;}
   .paragraph {font-size: 15px;}
   .paragraph-time {font-size: 13px;}
+  .modal-close {
+    width: 30px;
+    height: 30px;}
 }
 
 
