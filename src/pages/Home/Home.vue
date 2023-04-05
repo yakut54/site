@@ -29,6 +29,10 @@
         </div>
       </div>
 
+      <Teleport to="body">
+        <AccountModal />
+      </Teleport>
+
     </Page>
   </div>
 </template>

@@ -61,7 +61,7 @@ export default {
   name: "Feedback",
   setup() {
     const store = useStore()
-    const isModalOpen = computed(() => store.state.isModalOpen)
+    const isModalOpen = computed(() => store.state.modal.isModalOpen)
     const toggleIsModalOpen = () => store.commit('toggleIsModalOpen')
 
     return { isModalOpen, toggleIsModalOpen }

@@ -11,6 +11,10 @@
   <AppFooter />
   <MobileBottomMenu />
   <Overlay />
+
+  <Teleport to="body">
+    <AccountModal />
+  </Teleport>
 </template>
 
 <script>
@@ -19,6 +23,7 @@ import AppSidebar from '@/widgets/Sidebar/AppSidebar'
 import AppFooter from '@/widgets/Footer/AppFooter'
 import Overlay from '@/widgets/Overlay/Overlay'
 import MobileBottomMenu from '@/widgets/MobileBottomMenu/MobileBottomMenu'
+import AccountModal from '@/widgets/AccountModal/AccountModal'
 
 export default {
   name: "Page",
@@ -28,7 +33,8 @@ export default {
     AppSidebar,
     AppFooter,
     MobileBottomMenu,
-    Overlay
+    Overlay,
+    AccountModal
   }
 }
 </script>

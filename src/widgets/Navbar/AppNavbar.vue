@@ -41,7 +41,7 @@
             <div class="loupe"></div>
           </div>
           <div class="search-right">
-            <button class="lk-btn ar"><span class="hide_600">Личный кабинет</span></button>
+            <button class="lk-btn ar" @click="toggleIsModalAccountOpen"><span class="hide_600">Личный кабинет</span></button>
           </div>
         </div>
       </div>
@@ -61,8 +61,9 @@ export default {
     const store = useStore()
     const isDrop = computed(() => store.state.menu.isDropMenu)
     const toggleIsDrop = bool => store.commit('toggleIsDropMenu', bool)
+    const toggleIsModalAccountOpen = () => store.commit('toggleIsModalAccountOpen')
 
-    return { isDrop, toggleIsDrop }
+    return { isDrop, toggleIsDrop, toggleIsModalAccountOpen }
   },
   components: { DescktopNavbar, NavbarContent }
 }
