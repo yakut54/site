@@ -51,7 +51,7 @@
           <div class="buttons-block">
             <a class="account-btn active" href="#">Мой профиль</a>
             <a class="account-btn" href="orders.html">Мои заказы</a>
-            <a class="account-btn" href="#">Мои сообщения</a>
+            <a class="account-btn" href="messages.html">Мои сообщения</a>
             <span class="account-btn galka" @click="isOpen = !isOpen" :class="{ 'open': isOpen }">
               Помощь
             </span>

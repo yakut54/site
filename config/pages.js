@@ -4,7 +4,8 @@ const pages = {
   about: 'About',
   catalog: 'Catalog',
   account: 'Account',
-  orders: 'Orders'
+  orders: 'Orders',
+  messages: 'Messages',
 }
 
 module.exports = Object
