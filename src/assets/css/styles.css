@@ -121,6 +121,7 @@ body{
 .right{
   text-align: right;
 }
+.pl0{padding-left: 0;}
 .bread-crumbs{
   display: flex;
   margin-bottom: 10px;
@@ -195,6 +196,7 @@ body{
   .razum-h5-background {background-size: 31px;}
   .page {margin-top: 60px;overflow-x: hidden;}
   .home-item p br:not(.br){display: none;}
+  .paragraph br:not(.br){display: none;}
 }
 @media (max-width: 900px) {
   .content {padding: 10px 7px 0px 10px;}
@@ -216,11 +218,12 @@ body{
   .wrapper {margin-top: 0px;}
 }
 @media (max-width: 500px) {
-  .bread-crumbs-title {font-size: 13px;}
+  .bread-crumbs-title {font-size: 11px;}
   .bread-arrow {
-    background-size: 14px;
+    background-size: 11px;
+    width: 16px;
     top: 6px;
-    left: -9px;}
+    left: -2px;}
   .home-item .item-img {width: 59px;}
   .razum-h5-background {
     padding: 2% 2%;

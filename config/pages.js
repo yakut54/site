@@ -2,10 +2,12 @@ const pages = {
   index: 'Home',
   gifts: 'Gifts',
   about: 'About',
+  orders: 'Orders',
   catalog: 'Catalog',
   account: 'Account',
-  orders: 'Orders',
   messages: 'Messages',
+  message: 'MessageItem',
+  questions: 'Questions',
 }
 
 module.exports = Object

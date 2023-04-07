@@ -1,6 +1,16 @@
 <template>
   <div class="page">
     <Page>
+      <div class="bread-crumbs">
+        <a class="bread-crumbs-item" href="#">
+          <span class="bread-crumbs-title">Главная</span>
+          <span class="bread-arrow"></span>
+        </a>
+        <a class="bread-crumbs-item" href="#">
+          <span class="bread-crumbs-title">Сообщения</span>
+          <span class="bread-arrow"></span>
+        </a>
+      </div>
       <TopContentRedLine :title="'Мои сообщения'" :link="'index.html'"/>
 
       <div class="messages-text mmb dop-1">

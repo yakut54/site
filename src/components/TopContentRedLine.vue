@@ -97,7 +97,10 @@ export default {
     height: 32px;}
 }
 @media (max-width: 400px) {
-  .red-line-title {font-size: 19px;}
+  .red-line-title {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 19px;}
   .back-button {
     width: 28px;
     height: 28px;}
