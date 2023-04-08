@@ -94,6 +94,7 @@ aside{
 }
 @media (max-width: 360px) {
   .slider-a, .sidebar-slider, .slider-a-img {height: 310px;}
+  .sidebar-link {font-size: 15px;}
 }
 @media (max-width: 330px) {
   .slider-a, .sidebar-slider, .slider-a-img {height: 280px;}

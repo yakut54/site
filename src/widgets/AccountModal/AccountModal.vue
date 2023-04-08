@@ -8,7 +8,7 @@
         <p class="modal-account-paragraph">Номер телефона</p>
         <div class="phone-block">
           <div class="phone-block-left">
-            <select name="" id="" class="ar">
+            <select name="" id="" class="ar" v-model="code">
               <option value="+7">+7</option>
               <option value="+326">+326</option>
               <option value="+998">+998</option>
@@ -16,8 +16,7 @@
             </select>
           </div>
           <div class="phone-block-right">
-            <input type="text" class="ar" maxlength="256" name="name-2" data-name="Name 2" placeholder="(___) ___-__-__"
-              id="name-2">
+            <input type="text" class="ar" placeholder="Введите телефон" v-mask="'(###) ###-##-##'" v-model="number">
           </div>
         </div>
 
@@ -48,7 +47,11 @@ export default {
     const isAuth = ref(false)
     const toggleAuth = () => isAuth.value = !isAuth.value
 
-    return { isModalAccountOpen, toggleIsModalAccountOpen, isAuth, toggleAuth }
+    const code = ref('+7')
+    const number = ref('')
+    const tel = computed(() => code.value + ' ' + number.value)
+
+    return { isModalAccountOpen, toggleIsModalAccountOpen, isAuth, toggleAuth, tel, code, number }
   },
 }
 </script>

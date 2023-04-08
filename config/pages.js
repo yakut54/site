@@ -1,5 +1,6 @@
 const pages = {
   chat: 'Chat',
+  card: 'Card',
   index: 'Home',
   gifts: 'Gifts',
   about: 'About',
