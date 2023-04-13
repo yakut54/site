@@ -1,6 +1,6 @@
 <template>
 
-  <div class="mobile-navbar show_1000" :class="{'active': isDrop}">
+  <div class="mobile-navbar show_1025" :class="{'active': isDrop}">
     <NavbarContent />
   </div>
 
@@ -11,7 +11,7 @@
       </div>
       <div class="navbar">
         <div class="left-navbar">
-          <a href="#" class="left-navbar-link">
+          <a href="index.html" class="left-navbar-link">
             <img src="@/assets/images/home.png" alt="" />
             <span class="span-katalog">Главная</span>
           </a>
@@ -24,7 +24,7 @@
             <span class="span-katalog">Бесплатно</span>
           </a>
           <DescktopNavbar />
-          <div class="left-navbar-link navbar-katalog-btn show_1000_f" @click="toggleIsDrop(!isDrop)">
+          <div class="left-navbar-link navbar-katalog-btn show_1025_f" @click="toggleIsDrop(!isDrop)">
             <img src="@/assets/images/katalog.png" alt="" />
             <span class="span-katalog">Каталог</span>
             <span class="navbar-katalog-coner">
@@ -41,7 +41,7 @@
             <div class="loupe"></div>
           </div>
           <div class="search-right">
-            <button class="lk-btn ar"><span class="hide_600">Личный кабинет</span></button>
+            <button class="lk-btn ar" @click="toggleIsModalAccountOpen"><span class="hide_600">Личный кабинет</span></button>
           </div>
         </div>
       </div>
@@ -59,10 +59,11 @@ export default {
   name: 'Navbar',
   setup(){
     const store = useStore()
-    const isDrop = computed(() => store.state.isDropMenu)
+    const isDrop = computed(() => store.state.menu.isDropMenu)
     const toggleIsDrop = bool => store.commit('toggleIsDropMenu', bool)
+    const toggleIsModalAccountOpen = () => store.commit('toggleIsModalAccountOpen')
 
-    return { isDrop, toggleIsDrop }
+    return { isDrop, toggleIsDrop, toggleIsModalAccountOpen }
   },
   components: { DescktopNavbar, NavbarContent }
 }

@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+const pages = require('./config/pages')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const pageName = 'dist'
 
@@ -8,12 +9,12 @@ const publicPath = process.env.NODE_ENV === 'production'
   : '/'
 
 module.exports = defineConfig({
-  transpileDependencies: true,
-  productionSourceMap: false,
-  publicPath,
+  pages,
   outputDir,
+  publicPath,
+  productionSourceMap: false,
+  transpileDependencies: true,
   configureWebpack: {
-    
     plugins: [
       // new BundleAnalyzerPlugin({
       //   analyzerPort: 5001,
@@ -21,18 +22,5 @@ module.exports = defineConfig({
       // })
     ]
   },
-  pages: {
-    'index': {
-      entry: './src/pages/Home/index.js',
-      template: 'public/index.html',
-      title: 'Home',
-      chunks: ['chunk-vendors', 'chunk-common', 'index']
-    },
-    'about': {
-      entry: './src/pages/About/index.js',
-      template: 'public/index.html',
-      title: 'About',
-      chunks: ['chunk-vendors', 'chunk-common', 'about']
-    }
-  }
 })
+

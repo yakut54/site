@@ -79,7 +79,7 @@ div[class^="slider-item"]:not(.slider-type-0) .slider-content{
 }
 
 .heading-8 {
-  color: #d6c9a2;
+  color: var(--color-beige);
   font-size: 150px;
   line-height: 1em;
   font-weight: 400;

@@ -12,7 +12,7 @@
 <style>
 .marquee-wrapper {
   padding: 1%;
-  background-color: #d6c9a2;
+  background-color: var(--color-beige);
 }
 .marquee-inner {
   width: 100%;

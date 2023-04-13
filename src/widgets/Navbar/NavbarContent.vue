@@ -3,7 +3,12 @@
     <div class="inner-navbar-katalog-content">
 
       <div :key="idx" v-for="(_, idx) in NAV" class="katalog-content-col">
-        <a :href="item.link" :key="i * Math.random()" v-for="(item, i) in NAV[idx]" class="row katalog-button">
+        <a 
+          :href="item.link" 
+          :key="i * Math.random()" 
+          class="row katalog-button"
+          v-for="(item, i) in NAV[idx]" 
+        >
           <img alt="" class="img-katalog-button" :src="`${path}/img/${item.img}`">
           <div class="inner-katalog-button">
             <span class="inner-span-katalog" v-html="item.name"></span>
@@ -28,8 +33,6 @@ export default {
   setup() {
     const NAV = ref(delimetr(navbar))
     const path = ref(pathname)
-
-    // console.log('pathname >>> ', pathname);
 
     return { NAV, path }
   },

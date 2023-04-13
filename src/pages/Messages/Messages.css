@@ -1,0 +1,169 @@
+.messages-text{
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.messages-text-a{
+  color: var(--main-color);
+}
+.messages-text-row{
+  margin-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.messages-text-left{
+  flex: 1;
+  text-align: left;
+}
+.messages-text-right{
+  flex: 1;
+  text-align: right;
+}
+.mmb{margin-bottom: 30px;}
+.messages-row{
+  width: 100%;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px 2px 1px;
+  border-color: #f0eade;
+  border-radius: 10px;
+  background-color: #f0eade;
+}
+.messages-left{
+  flex: 1;
+  max-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messages-center{
+  flex: 1;
+  max-width: 141px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messages-right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-messages-left{
+  flex: 1;
+  background: #fff;
+  padding: 5px;
+  border-right: 2px solid #f0eade;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-messages-left img{
+  width: 24px;
+}
+.inner-messages-center{
+  flex: 1;
+  background: #fff;
+  padding: 5px;
+  padding-left: 10px;
+  border-right: 2px solid #f0eade;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inner-messages-right{
+  flex: 1;
+  background: #fff;
+  padding: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.inner-messages-center, .inner-messages-right, .messages-center,
+.messages-row, .inner-messages-left, .messages-left, .messages-right {
+  align-self: stretch;
+}
+.messages-center-title{
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #000;
+}
+.messages-center-date{
+  line-height: 1.4em;
+  font-size: 14px;
+  color: #000;
+}
+.messages-right-link{
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #000;
+}
+.messages-right:hover .messages-right-link{
+  color: var(--main-color);
+}
+.new-message{
+  font-family: akrobat-bold;
+}
+
+
+
+@media (max-width: 1025px) {
+  .messages-left {max-width: 50px;}
+  .messages-center-title {font-size: 18px;}
+  .messages-right-link {font-size: 17px;}
+  .messages-center {max-width: 110px;}
+}
+
+@media (max-width: 700px) {
+  .mmb {margin-bottom: 10px;}
+  .messages-text {font-size: 18px;}
+}
+
+@media (max-width: 500px) {
+  .messages-center-title {font-size: 17px;}
+  .inner-messages-left img {width: 20px;}
+  .messages-center-date {font-size: 12px;}
+  .messages-right-link {font-size: 16px;line-height: 1.2em;}
+  .inner-messages-right, .inner-messages-center{padding: 5px;}
+}
+
+@media (max-width: 500px) {
+  .messages-left {max-width: 40px;}
+  .messages-center {max-width: 90px;}
+  .inner-messages-left img {width: 18px;}
+}
+
+@media (max-width: 400px) {
+  .messages-text {font-size: 17px;}
+  .dop-1{text-align: center;}
+}
+
+@media (max-width: 360px) {
+  .messages-right-link {font-size: 15px;}
+  .messages-center-title {font-size: 16px;}
+  .messages-center-date {font-size: 11px;}
+  .messages-center {max-width: 80px;}
+  .messages-text {font-size: 16px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

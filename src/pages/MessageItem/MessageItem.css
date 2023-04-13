@@ -1,0 +1,130 @@
+.theme-message{
+
+}
+.theme-message-text{
+  margin-bottom: 1%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.theme-message-text-mini{
+  margin-bottom: 2%;
+  font-size: 14px;
+}
+.theme-border{
+  height: 3px;
+  margin-bottom: 2%;
+  background-color: #faf0e0;
+}
+.message-wrap{
+  padding: 0 3% 3%;
+  background-color: #fff;
+}
+.message-text-16{
+  margin-bottom: 2%;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.message-row{
+  margin-bottom: 2%;
+}
+.message-content{
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 250px;
+}
+.message-img{
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 170px;
+  max-width: 266px;
+}
+.message-img img{
+  display: block;
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.message-link{
+  color: var(--main-color);
+}
+.message-link:hover{
+  text-decoration: underline;
+}
+.message-border-left{
+  padding: 2%;
+  margin-bottom: 2%;
+  border-left: 3px solid #d6c9a2;
+}
+.message-go{
+  margin-top: 5%;
+}
+.message-go-link{
+  max-width: 180px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 3%;
+  line-height: 20px;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.message-go-link:hover{
+  background-color: #b91726;
+}
+
+@media (max-width: 900px) {
+  .message-img {
+    min-width: 165px;
+    max-width: 165px;}
+  .message-img img{
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+  .message-text-16 br:not(.br){display: none;}
+}
+@media (max-width: 500px) {
+  .theme-message-text {font-size: 18px;}
+  .theme-message-text-mini {font-size: 13px;}
+}
+@media (max-width: 400px) {
+  .message-wrap {padding: 0 1% 3%;}
+  .message-img{
+    order: -1;
+    margin-bottom: 10px;
+    margin-top: 10px;}
+}
+@media (max-width: 375px) {
+  .theme-message-text {font-size: 16px;}
+  .message-text-16 {font-size: 14px;}
+}
+@media (max-width: 320px) {
+  .message-go-link {
+    max-width: 171px;
+    font-size: 15px;
+    margin-bottom: 3%;
+    line-height: 17px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
