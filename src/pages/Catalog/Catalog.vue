@@ -174,7 +174,7 @@
 import Page from '@/hoc/hoc'
 import TopContentRedLine from '@/components/TopContentRedLine'
 import Feedback from './Feedback'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useStore } from 'vuex'
 import { pathname } from '@/path'
 
@@ -190,6 +190,10 @@ export default {
     }
 
     const toggleIsModalOpen = () => store.commit('toggleIsModalOpen')
+
+    onMounted(() => {
+      console.log('localStorage >>> ', JSON.parse(localStorage.getItem('page'), null, 2));
+    })
 
     return { path, isOpen, toggleIsOpen, toggleIsModalOpen }
   },

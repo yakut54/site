@@ -1,9 +1,9 @@
 .gift-card{
   margin-bottom: 3%;
-  border: 1px solid #d6c9a2;
+  border: 1px solid var(--color-beige);
 }
 .gift-card-title {
-  background-color: #d6c9a2;
+  background-color: var(--color-beige);
   font-size: 28px;
   line-height: 1.3em;
   text-align: center;

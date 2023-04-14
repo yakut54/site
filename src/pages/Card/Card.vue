@@ -71,6 +71,10 @@ export default {
     const store = useStore()
     const path = ref(pathname)
 
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(2, json))
+
     return { path }
   },
   components: { Page, TopContentRedLine }

@@ -39,7 +39,7 @@
 
 <script>
 import Page from '@/hoc/hoc'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { pathname } from '@/path'
 import { MainPage } from './MainPage'
 
@@ -48,6 +48,11 @@ export default {
   setup() {
     const path = ref(pathname)
     const page = ref(MainPage)
+
+
+    onMounted(() => {
+      localStorage.setItem('page', JSON.stringify(page.value))
+    })
 
     return { path, page }
   },

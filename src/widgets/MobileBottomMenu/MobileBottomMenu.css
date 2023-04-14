@@ -2,7 +2,8 @@
   width: 100%;
   background: var(--main-color);
   justify-content: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   z-index: 5;
 }
 .inner-mobile-menu{
@@ -20,8 +21,8 @@
   align-items: center;
   color: #fff;
   display: flex;
-  max-height: var(--height);
-  min-height: var(--height);
+  max-height: 50px;
+  min-height: 50px;
 }
 .bottom-btn a{color:#fff;}
 .bottom-btn.active-btn, .bottom-btn:hover{
@@ -33,7 +34,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  bottom: var(--height);
+  bottom: 50px;
   perspective: 1000px;
 }
 .curtain{
@@ -74,27 +75,26 @@
   .bottom-btn {font-size: 20px;}
   .right-curtain .bottom-btn {padding-left: 87px;}
   .left-curtain .bottom-btn {padding-right: 72px;}
-  :root {--height: 45px !important;}
 }
 @media (max-width: 700px) {
   .bottom-btn {font-size: 19px;}
   .right-curtain .bottom-btn {padding-left: 89px;}
   .left-curtain .bottom-btn {padding-right: 75px;}
-  :root {--height: 42px !important;}
 }
 @media (max-width: 600px) {
-  .bottom-btn {font-size: 18px;}
   .right-curtain .bottom-btn {padding-left: 91px;}
   .left-curtain .bottom-btn {padding-right: 79px;}
-  :root {--height: 40px !important;}
 }
 @media (max-width: 500px) {
-  .bottom-btn {font-size: 16px;}
+  .bottom-btn {
+    font-size: 17px;
+    max-height: 45px;
+    min-height: 45px;}
   .right-curtain .bottom-btn {padding-left: 20px;}
   .left-curtain .bottom-btn {padding-right: 20px;}
-  :root {--height: 29px !important;}
   .bottom-btn.left_{justify-content: flex-end;padding-right: 20px;}
   .bottom-btn.right_{justify-content: flex-start;padding-left: 20px;}
+  .bottom-menu {bottom: 45px;}
 }
 @media (max-width: 375px) {
   .bottom-btn {font-size: 15px;}
@@ -103,7 +103,6 @@
   .bottom-btn {font-size: 14px;}
   .right-curtain .bottom-btn {padding-left: 10px;}
   .left-curtain .bottom-btn {padding-right: 10px;}
-  :root {--height: 30px !important;}
   .bottom-btn.left_{justify-content: flex-end;padding-right: 10px;}
   .bottom-btn.right_{justify-content: flex-start;padding-left: 10px;}
 }

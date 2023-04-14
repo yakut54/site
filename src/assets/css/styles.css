@@ -3,7 +3,6 @@
   --main-color: #d42939;
   --hover-btn: rgb(240, 234, 222);
   --color-beige: #d6c9a2;
-  --height: 50px;
 }
 html, body{
   background: #fefcf6;
@@ -27,8 +26,8 @@ body{
   display: flex;
   flex: 1;
   padding: 0px 10px 0px 10px;
-  border-right: 1px dotted #d6c9a2;
-  border-left: 1px dotted #d6c9a2;
+  border-right: 1px dotted var(--color-beige);
+  border-left: 1px dotted var(--color-beige);
 }
 .page{
   width: 100%;
@@ -177,7 +176,7 @@ body{
 }
 .cu{cursor: pointer;}
 .input{
-  border: 1px solid #d6c9a2;
+  border: 1px solid var(--color-beige);
   min-height: 45px;
   margin-bottom: 15px;
   border-radius: 5px;
