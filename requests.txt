@@ -1,0 +1,14 @@
+{
+  request_type: 'send_phone',
+  phone: phone
+}
+
+{
+  request_type: 'send_email',
+  email: email
+}
+
+{
+  request_type: 'send_code',
+  code: code
+}

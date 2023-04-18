@@ -124,10 +124,10 @@ export default {
     const clientWidth = (item) => {
       if(item.type === 2){
         if(width.value <= 500){
-          return `url(${path.value}/img/${item.background_mobile}`
+          return `url(${path.value}${item.background_mobile}`
         }
       }
-      return `url(${path.value}/img/${item.background}`
+      return `url(${path.value}${item.background}`
     }
 
     const changedWidth = () => width.value = document.documentElement.clientWidth

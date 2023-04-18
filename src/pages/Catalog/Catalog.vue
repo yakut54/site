@@ -19,7 +19,7 @@
         <div class="wrap-catalog-top-btn _pl0">
           <a class="catalog-top-btn" href="#">
             <div class="catalog-top-btn-left">
-              <img :src="`${path}/img/nav_19.png`" alt="" class="catalog-top-btn-img">
+              <img :src="`${path}/nav_19.png`" alt="" class="catalog-top-btn-img">
             </div>
             <div class="catalog-top-btn-right">
               <div class="inner-catalog-top-btn-right">Бестселлеры</div>
@@ -31,7 +31,7 @@
         <div class="wrap-catalog-top-btn">
           <a class="catalog-top-btn" href="#">
             <div class="catalog-top-btn-left">
-              <img :src="`${path}/img/nav_20.png`" alt="" class="catalog-top-btn-img">
+              <img :src="`${path}/nav_20.png`" alt="" class="catalog-top-btn-img">
             </div>
             <div class="catalog-top-btn-right">
               <div class="inner-catalog-top-btn-right">Новинки</div>
@@ -43,7 +43,7 @@
         <div class="wrap-catalog-top-btn _pr0">
           <a class="catalog-top-btn" href="#">
             <div class="catalog-top-btn-left">
-              <img :src="`${path}/img/nav_21.png`" alt="" class="catalog-top-btn-img">
+              <img :src="`${path}/nav_21.png`" alt="" class="catalog-top-btn-img">
             </div>
             <div class="catalog-top-btn-right">
               <div class="inner-catalog-top-btn-right">вкусная распродажа</div>
@@ -70,7 +70,7 @@
 
           <div class="akkordeon-top" @click="toggleIsOpen">
             <div class="akk-top-left">
-              <img :src="`${path}/img/nav_1.png`" alt="" class="akk-top-img">
+              <img :src="`${path}/nav_1.png`" alt="" class="akk-top-img">
             </div>
             <div class="akk-top-right">
               <div class="akk-top-right-title">Нейрокорректоры</div>
@@ -82,7 +82,7 @@
 
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-00.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-00.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -95,7 +95,7 @@
 
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-01.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-01.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -107,7 +107,7 @@
               </div>
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-00.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-00.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -119,7 +119,7 @@
               </div>
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-02.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-02.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -131,7 +131,7 @@
               </div>
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-03.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-03.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -143,7 +143,7 @@
               </div>
               <div class="akk-card">
                 <div class="inner-akk-card">
-                  <img :src="`${path}/img/akk1-04.png`" alt="" class="akk-card-img">
+                  <img :src="`${path}/akk1-04.png`" alt="" class="akk-card-img">
                   <div class="akk-card-format">Формат: <strong>аудиотрек</strong></div>
                   <div class="text-block-1335">Цена:</div>
                   <div class="text-block-350">1 080 <strong style="font-family: arial;">₽</strong></div>
@@ -174,7 +174,7 @@
 import Page from '@/hoc/hoc'
 import TopContentRedLine from '@/components/TopContentRedLine'
 import Feedback from './Feedback'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useStore } from 'vuex'
 import { pathname } from '@/path'
 
@@ -190,6 +190,10 @@ export default {
     }
 
     const toggleIsModalOpen = () => store.commit('toggleIsModalOpen')
+
+    onMounted(() => {
+      console.log('localStorage >>> ', JSON.parse(localStorage.getItem('page'), null, 2));
+    })
 
     return { path, isOpen, toggleIsOpen, toggleIsModalOpen }
   },

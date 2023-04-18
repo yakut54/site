@@ -63,6 +63,7 @@
 }
 .navbar-katalog-coner{
   position: relative;
+  transition: .3s;
   top: 3px;
   left: 0px;
 }
@@ -238,9 +239,8 @@ img.img-katalog-button{
 
 @media (max-width: 1024px) {
   .right-navbar {width: 350px;}
-  .navbar-katalog-content{position: static;}
   .right-navbar {width: 340px;}
-  .navbar-katalog-content{top: 70px;}
+  .navbar-katalog-content{top: 10px;}
   span.span-katalog{display: none;}
   .navbar-katalog-coner {left: 5px;}
   .descktop-navbar {height: 70px;}
@@ -261,7 +261,7 @@ img.img-katalog-button{
     height: 60px;}
   .descktop-navbar {height: 60px;}
   .left-navbar-link {padding: 15px 22px 14px 5px;}
-  .navbar-katalog-content{border-bottom: 1px solid #000;}
+  .navbar-katalog-content{border-bottom: 1px solid #000;top: 0;}
 }
 @media (max-width: 700px) {
   .loupe {

@@ -55,7 +55,7 @@
 .message-border-left{
   padding: 2%;
   margin-bottom: 2%;
-  border-left: 3px solid #d6c9a2;
+  border-left: 3px solid var(--color-beige);
 }
 .message-go{
   margin-top: 5%;

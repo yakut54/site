@@ -9,7 +9,7 @@
           class="row katalog-button"
           v-for="(item, i) in NAV[idx]" 
         >
-          <img alt="" class="img-katalog-button" :src="`${path}/img/${item.img}`">
+          <img alt="" class="img-katalog-button" :src="`${path}${item.img}`">
           <div class="inner-katalog-button">
             <span class="inner-span-katalog" v-html="item.name"></span>
             <span class="flag-wrapper">
@@ -19,6 +19,7 @@
           </div>
         </a>
       </div>
+
     </div>
   </div>
 </template>

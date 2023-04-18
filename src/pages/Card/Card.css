@@ -1,0 +1,200 @@
+.card-desc-content{
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 250px;
+}
+.card-desc-img{
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 170px;
+  max-width: 266px;
+}
+.card-desc-img img{
+  width: 100%;
+}
+.buy-block{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 3px 0 #676770;
+}
+.buy-block-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.buy-block-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  min-width: 170px;
+  background-color: var(--color-beige);
+  max-width: 320px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.buy-block-img img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  width: 90%;
+}
+.buy-format{
+  text-align: center;
+  line-height: 1.2em;
+}
+.buy-block-img:hover{
+  background-color: var(--main-color);
+}
+.buy-block-title{
+  text-align: center;
+  font-family: akrobat-black;
+  color: var(--main-color);
+  font-size: 30px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+.buy-block-cost{
+  font-size: 24px;
+  line-height: 1.2em;
+  text-align: center;
+}
+.buy-block-cena{
+  font-family: akrobat-black;
+  text-align: center;
+  margin-bottom: 3%;
+  color: var(--main-color);
+  font-size: 44px;
+  line-height: 1.2em;
+  margin-top: 0px;
+}
+.buy-block-button{
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-right: auto;
+  margin-bottom: 3%;
+  margin-left: auto;
+  border-radius: 8px;
+  background-image: linear-gradient(180deg, var(--main-color), #960606);
+  font-size: 24px;
+  line-height: 1.6em;
+  text-align: center;
+  padding: 9px 15px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buy-block-button:hover{
+  background-image: linear-gradient(180deg, #960606, var(--main-color));
+}
+.agreement {
+  width: 100%;
+  color: #bec3c7;
+  font-size: 16px;
+  font-family: akrobat-regular;
+  padding: 0 10px;
+}
+.agreement span {
+  text-decoration: underline;
+  color: #551a8b;
+  cursor: pointer;
+}
+.card-link{
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 7%;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, var(--color-beige), #bfae7e 99%);
+  color: #000;
+  font-size: 22px;
+  line-height: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px 15px;
+  transition: .3s;
+}
+.card-link:hover{
+  background-image: linear-gradient(180deg, #bfae7e 99%, var(--color-beige));
+}
+
+
+@media (max-width: 1025px) {
+  .buy-block-img {max-width: 270px;}
+  .agreement br:not(.br){display: none;}
+}
+@media (max-width: 900px) {
+  .card-desc-img {max-width: 180px;}
+  .buy-block-img{min-width: 100%;}
+  .agreement{padding: 0;}
+  .buy-block-img img {max-width: 60%;}
+}
+@media (max-width: 700px) {
+  .card-desc-img {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 170px;}
+  .card-desc-content{padding-left: 5px;}
+  .buy-block-title {font-size: 26px;}
+  .buy-block-cena {font-size: 39px;}
+  .buy-block-button {
+    max-width: 300px;
+    font-size: 22px;
+    line-height: 1.4em;}
+  .buy-block-cost {font-size: 22px;}
+}
+@media (max-width: 600px) {
+  .card-link {margin-bottom: 1%;}
+}
+@media (max-width: 500px) {
+  .card-link{
+    line-height: 1.4em;
+    font-size: 22px;
+    max-width: 360px;}
+  .card-desc-content{min-width: 100%;}
+  .card-desc-img{order: -1;margin-bottom: 15px;}
+  .buy-block-cena {font-size: 36px;}
+  .buy-block-title {font-size: 24px;}
+  .buy-block-cost {font-size: 20px;}
+  .agreement {font-size: 15px;}
+}
+@media (max-width: 400px) {
+  .card-link {max-width: 90%;font-size: 20px;}
+}
+@media (max-width: 375px) {
+  .buy-block-button{max-width: 90%;}
+  .buy-block-title {font-size: 22px;}
+  .buy-block-cena {font-size: 34px;}
+}
+@media (max-width: 360px) {
+  .buy-block-button {
+    max-width: 87%;
+    font-size: 18px;}
+  .buy-block-content{padding-left: 10px;padding-right: 10px;}
+  .agreement {font-size: 13px;}
+}
+@media (max-width: 320px) {
+  .buy-block-title {font-size: 20px;}
+  .buy-block-cena {font-size: 31px;}
+  .card-link {
+    max-width: 80%;
+    font-size: 18px;}
+}
+
+
+
+
+
+

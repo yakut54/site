@@ -5,7 +5,7 @@
         <template v-for="(item, idx) in slider_">
           <transition-group :name="transitionName">
             <a href="#" v-if="currentSlide === idx" class="slider-a">
-              <img :src="`${path}/img/${item.img}`" alt="" :key="item" class="slider-a-img">
+              <img :src="`${path}${item.img}`" alt="" :key="item" class="slider-a-img">
             </a>
           </transition-group>
         </template>

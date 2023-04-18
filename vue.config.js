@@ -1,11 +1,11 @@
 const { defineConfig } = require('@vue/cli-service')
 const pages = require('./config/pages')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-const pageName = 'dist'
+const pageName = 'html'
 
 const outputDir = pageName
 const publicPath = process.env.NODE_ENV === 'production'
-  ? `/${pageName}`
+  ? `/wp-content/themes/ak-v5/${pageName}`
   : '/'
 
 module.exports = defineConfig({
