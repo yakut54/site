@@ -1,3 +1,3 @@
 export const pathname = process.env.NODE_ENV === 'production'
-  ? '/dist'
-  : 'http://localhost:8080'
+  ? 'https://marta-ng.com/wp-content/themes/ak-v5/images/'
+  : 'https://marta-ng.com/wp-content/themes/ak-v5/images/'

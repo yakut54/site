@@ -88,6 +88,7 @@ footer{
   .right-footer {max-width: 468px;}
   footer {
     margin-top: 2%;
+    margin-bottom: 45px;
     padding: 20px 15px 15px;}
   .footer-link-2 {margin-top: 7px;}
 }

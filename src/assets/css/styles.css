@@ -51,6 +51,11 @@ body{
   background-color: var(--color-beige);
   font-size: 24px;
 }
+.razum-h5{
+  padding: 4% 2% 4% 4%;
+  font-size: 24px;
+  background-color: var(--color-beige);
+}
 .home-item{
   flex: 1;
   padding-left: 5px;
@@ -117,10 +122,24 @@ body{
   font-size: 16px;
   line-height: 1.4em;
 }
+.paragraph-20{
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.paragraph-15{
+  font-size: 15px;
+  line-height: 1.4em;
+}
+.paragraph-14{
+  font-size: 14px;
+  line-height: 1.4em;
+}
 .right{
   text-align: right;
 }
 .pl0{padding-left: 0;}
+.mb15{margin-bottom: 15px;}
+.mb10{margin-bottom: 10px;}
 .bread-crumbs{
   display: flex;
   margin-bottom: 10px;
@@ -186,7 +205,8 @@ body{
   padding-left: 15px;
 }
 .input:focus{
-  outline: 1px solid blue;
+  border: 1px solid blue;
+  outline: none;
 }
 .label{
   margin-bottom: 1%;
@@ -239,6 +259,7 @@ body{
 .chat-button.cancel:hover{
   background-color: #55555c;
 }
+.mt10{margin-top: 10px;}
 
 
 @media (max-width: 1025px) {
@@ -270,9 +291,12 @@ body{
   .content{padding-bottom: 30px;}
 }
 @media (max-width: 500px) {
+  .paragraph-20 {font-size: 18px;}
   .modal-close {
-    width: 30px;
-    height: 30px;}
+    width: 25px;
+    top: 5px;
+    right: 5px;
+    height: 25px;}
   .bread-crumbs-title {font-size: 11px;}
   .bread-arrow {
     background-size: 11px;

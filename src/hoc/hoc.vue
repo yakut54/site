@@ -14,6 +14,7 @@
 
   <Teleport to="body">
     <AccountModal />
+    <SecurityPolicy />
   </Teleport>
 </template>
 
@@ -24,17 +25,19 @@ import AppFooter from '@/widgets/Footer/AppFooter'
 import Overlay from '@/widgets/Overlay/Overlay'
 import MobileBottomMenu from '@/widgets/MobileBottomMenu/MobileBottomMenu'
 import AccountModal from '@/widgets/AccountModal/AccountModal'
+import SecurityPolicy from '@/widgets/SecurityPolicy/SecurityPolicy'
 
 export default {
   name: "Page",
-
+  
   components: {
     AppHeader,
     AppSidebar,
     AppFooter,
     MobileBottomMenu,
     Overlay,
-    AccountModal
+    AccountModal,
+    SecurityPolicy
   }
 }
 </script>

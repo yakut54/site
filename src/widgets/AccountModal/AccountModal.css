@@ -15,7 +15,7 @@
   margin-bottom: 3%;
   border-bottom: 1px dashed var(--color-beige);
   color: var(--main-color);
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.2em;
   text-align: center;
   text-transform: uppercase;
@@ -32,9 +32,7 @@
   font-size: 16px;
 }
 .phone-block{
-  display: flex;
   width: 100%;
-  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,7 +41,6 @@
   max-width: 100px;
 }
 .phone-block-right{
-  margin-left: 5px;
   flex: 1
 }
 .phone-block-left select, .phone-block-right input{
@@ -62,10 +59,10 @@
   border: 1px solid #ccc;
   outline: none;
 }
+
 .phone-btn{
   display: block;
   width: 100%;
-  max-width: 300px;
   min-height: auto;
   margin-right: auto;
   margin-bottom: 4%;
@@ -86,19 +83,147 @@
   background-image: linear-gradient(180deg,#960606,#d52939);
   color: #fff;
 }
-.selection{
+.selection, .select-register.active{
   color: var(--main-color);
   text-decoration: underline;
 }
+.select-register {
+  color: black;
+  font-size: 19px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
 
+.modal-account {
+  padding: 30px 30px 30px;
+}
+
+.inner-modal-account {
+  border-radius: 5px;
+  border: 1px dashed var(--color-beige);
+  padding: 15px;
+}
+
+.inner-modal-account .modal-close {
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  right: 5px;
+}
+
+.modal-account-paragraph {
+  margin-right: auto;
+  margin-bottom: 1%;
+  margin-left: auto;
+  font-size: 16px;
+}
+.selection-phone-row{
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selection-phone-row-column{
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.phone-btn.disabled{
+  background: #ccc;
+  cursor: default;
+  opacity: .7;
+}
+.phone-btn.disabled:hover{
+  color: #000;
+  opacity: .7;
+}
+.code-input-left{
+  flex: 1;
+}
+.code-input-right{
+  flex: 1;
+  max-width: 60px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: var(--main-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.code-input-right.disabled{
+  cursor: default;
+  background-color: #ccc;
+}
+.code-input-row{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.selection-phone-row-column,
+.code-input-row, 
+.selection-phone-row, 
+.modal-account-paragraph, 
+.phone-btn, .phone-block{
+  max-width: 310px;
+}
+.code-input-left .input{
+  margin-bottom: 0;
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 55px;
+  font-size: 22px;
+}
+.code-send-img{
+  width: 35px;
+  transition: .3s;
+}
+.code-input-right:hover .code-send-img{
+  transform: scale(.95);
+}
+.code-timer{
+  color: blue;
+}
+.code-input-left .input.ivalid{
+  background-color: #f7c6c6;
+}
 
 @media (max-width: 900px) {
   .modal-account-title {font-size: 30px;}
 }
+@media (max-width: 600px) {
+  .select-register {font-size: 18px;}
+}
 @media (max-width: 500px) {
   .modal-account-title {font-size: 26px;}
+  .inner-modal-account {padding: 8px;}
+  .modal-account {padding: 30px 20px 20px;}
+}
+@media (max-width: 400px) {
+  .code-send-img {width: 25px;}
+  .modal-account {padding: 30px 15px 15px;}
+  .code-input-left .input {
+    height: 45px;
+    font-size: 19px;}
+  .code-input-right {max-width: 50px;}
 }
 @media (max-width: 360px) {
+  .inner-modal-account {
+    padding: 0px;
+    border: none;}
+  .modal-account-form {padding-top: 2px;}
+  .paragraph-14 br:not(.br){display: none;}
+  .modal-account {padding: 30px 10px 10px;}
+  .select-register {font-size: 17px;}
   .modal-account{padding-top: 15px;}
   .modal-account-title {font-size: 21px;}
+  .modal-account-paragraph {font-size: 15px;}
 }
